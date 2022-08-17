@@ -1,0 +1,18 @@
+Na aula de 17/08/2022 retomamos os conceitos de orientação a objetos e tivemos como desafio
+a elaboração de um sistema de calculadora em duplas com rodízio de projeto entre as duplas a
+cada 5 minutos.
+
+Foi especificado no projeto que o programa deveria:
+- Solicitar primeiro a operação que o usuário queria realizar.
+- Solicitasse os dois valores do usuário para calcular.
+- Exibisse o resultado no console.
+
+Foi exigido que após o funcionamento base do programa ele fosse parcionado em classes diferentes
+e utilizasse uma interface para realizar as mesmas funções delegando menos responsabilidades para
+a classe main. As classes e a organização da lógica do projeto foi feita tendo como base os esquemas
+ilustrados na lousa pelo professor discente da disciplina.
+
+Para executar o projeto, abra a pasta Calc no Eclipse IDE ou Visual Studio. A pasta com nome do projeto
+e este arquivo .txt não fazem parte do código fonte do trabalho.
+
+- Beatriz Nataly
