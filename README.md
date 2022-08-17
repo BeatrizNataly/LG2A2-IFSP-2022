@@ -1,5 +1,5 @@
-# Portifólio LG2A4 - IFSP
-**Tags: Faculdade, Personal**
+# ♨️ Portifólio LG2A4 - IFSP
+**Autor(a): Beatriz Nataly  -   Tags: Faculdade, Personal**
 
 Repositório contendo o resumo de minhas atividades realizadas em sala de aula durante o período letivo na disciplina de LG2A4.
 
@@ -14,6 +14,6 @@ Todos os projetos lançados estarão organizados em pastas contendo seu nome e a
 > *Calculadora_Aula_17.08 (pasta)*
 > 
 
-📢 Todos projetos estarão em Java, e podem ser acessados baixando-se a pasta escolhida e abrindo em uma IDE que funcione com Java ♨️. Recomenda-se Eclipse IDE ou Visual Studio Code.
+📢 Todos projetos estarão em Java, e podem ser acessados baixando-se a pasta escolhida e abrindo em uma IDE que funcione com Java. Recomenda-se Eclipse IDE ou Visual Studio Code.
 
-Para relatar problemas ou sugerir melhorias, por favor visite a página de [issues.](https://github.com/BeatrizNataly/LG2A4-IFSP-2022/issues/)❗
+Para relatar problemas ou sugerir melhorias, por favor visite a página de [issues.](https://github.com/BeatrizNataly/LG2A4-IFSP-2022/issues/)
