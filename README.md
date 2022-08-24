@@ -1,7 +1,7 @@
 # ♨️ Portifólio LP2A4 - IFSP
 **Autor(a): Beatriz Nataly  -   Tags: Faculdade, Personal**
 
-Repositório contendo o resumo de minhas atividades realizadas em sala de aula durante o período letivo na disciplina de LG2A4.
+Repositório contendo o resumo de minhas atividades realizadas em sala de aula durante o período letivo na disciplina de LP2A4.
 
 ## 🔎 **O que encontrarei no repositório?**
 
