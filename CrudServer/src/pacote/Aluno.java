@@ -1,5 +1,6 @@
 package pacote;
 public class Aluno {
+	private int id;
 	private String nome;
 	private String matricula;
 
@@ -8,6 +9,18 @@ public class Aluno {
 		this.nome = nome;
 		this.matricula = matricula;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
 
 	public String getNome() {
 		return nome;

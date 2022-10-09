@@ -1,8 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ page import="pacote.Aluno" %>
+<%@ page import="pacote.*" %>
+<%@ page import="pacote.dao.*" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
+<%@ taglig uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,24 +15,13 @@
 	<h1>Tabela relação de matrícula e aluno:</h1>
 	<%
 	// http://localhost:8080/CrudServer/index.jsp
-	
-	
-	//Limpar placeholders depois
-	List<Aluno> listaDeAlunos = new ArrayList<>();
+	List<Aluno> listaDeAlunos = AlunoDao.getAllAlunos();
+	request.setAttribute("list", listaDeAlunos);
 	%>
 	
-	<%
-	if(request.getParameter("aluno") != null && request.getParameter("matricula") != null)
-		if(!request.getParameter("aluno").isEmpty() || !request.getParameter("matricula").isEmpty()){
-			String nome = request.getParameter("aluno");
-			String matricula = request.getParameter("matricula");
-			listaDeAlunos.add(new Aluno(nome, matricula));
-		}
-%>
-	
 	<form name="alunoMat" method="get" action="index.jsp">
-		Aluno <input type="text" name="aluno">
-		Matrícula <input type="text" name="matricula">
+		Nome do aluno: <input type="text" name="aluno">
+		Matrícula: <input type="text" name="matricula">
 		<p><input type="submit" value="Salvar" ></p>
 	</form>
 	
@@ -53,9 +44,7 @@
 			<td><button onClick="">Excluir</button></td>
 			<td></td>
 		</tr>
-		<% 
-		System.out.println(i + "# --> " + listaDeAlunos.get(i).getNome());
-		} %>		
+		<% } %>		
 		</tr>
 </table>
 		
