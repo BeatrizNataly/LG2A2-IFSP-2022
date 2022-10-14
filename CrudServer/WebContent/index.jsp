@@ -4,7 +4,6 @@
 <%@ page import="pacote.dao.*" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
-<%@ taglig uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -19,7 +18,7 @@
 	request.setAttribute("list", listaDeAlunos);
 	%>
 	
-	<form name="alunoMat" method="get" action="index.jsp">
+	<form name="alunoMat" method="post" action="addaluno.jsp">
 		Nome do aluno: <input type="text" name="aluno">
 		Matrícula: <input type="text" name="matricula">
 		<p><input type="submit" value="Salvar" ></p>
@@ -30,25 +29,22 @@
 		<tr>
 			<td><h3 style="margin: 8px;">Nome</h3></td>
 			<td><h3 style="margin: 8px;">Matrícula</h3></td>
-			<td><h3 style="margin: 8px;"></h3></td>
-			<td><h3 style="margin: 8px;"></h3></td>
+			<td><h3 style="margin: 8px;">Editar</h3></td>
+			<td><h3 style="margin: 8px;">Excluir</h3></td>
 		</tr>
 		<tr>
-		
 		<% 
 		for(int i = 0; i < listaDeAlunos.size(); i++){ %>
 		<tr>
 			<td><%= listaDeAlunos.get(i).getNome()  %></td>
 			<td><p><%= listaDeAlunos.get(i).getMatricula() %></p></td>
-			<td><button onClick="">Editar</button></td>
-			<td><button onClick="">Excluir</button></td>
+			<td><a href="editform.jsp?id=${aluno.getId() }">Editar</a></td>
+			<td><a href="deletealuno.jsp?id=${aluno.getId() }">Excluir</a></td>
 			<td></td>
 		</tr>
 		<% } %>		
 		</tr>
 </table>
-		
-
 
 </body>
 </html>
